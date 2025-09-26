@@ -1,20 +1,14 @@
-# Usa una imagen base oficial de Python
-FROM python:3.11-slim
+# Usa una imagen oficial de Apache con PHP
+FROM php:8.2-apache
 
-# Establece el directorio de trabajo
-WORKDIR /app
+# Copia todo el contenido del repositorio al directorio raíz de Apache
+COPY . /var/www/html/
 
-# Copia el archivo de dependencias
-COPY requirements.txt ./
+# Da permisos adecuados (opcional pero recomendado)
+RUN chown -R www-data:www-data /var/www/html
 
-# Instala las dependencias
-RUN pip install --no-cache-dir -r requirements.txt
+# Expón el puerto 80
+EXPOSE 80
 
-# Copia el resto de la aplicación
-COPY . .
-
-# Expón el puerto (ajústalo según tu app, por ejemplo 8000)
-EXPOSE 8000
-
-# Comando para ejecutar la aplicación (ajusta si usas Flask, FastAPI, etc)
-CMD ["python", "main.py"]
+# Opcional: habilita mod_rewrite si usas .htaccess
+RUN a2enmod rewrite
