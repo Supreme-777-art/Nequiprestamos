@@ -1,0 +1,105 @@
+.factura {
+    position: absolute;
+    right: 10px;
+    top: 100px; /* Asegúrate de que la unidad es correcta */
+    width: 200px; /* Ajusta el ancho según sea necesario */
+    padding: 10px;
+    background-color: #f9f9f9; /* Color de fondo para diferenciar el div */
+    border: 1px solid #ccc; /* Borde para distinguir el div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+.factura div,
+.factura a {
+    display: block;
+    margin-bottom: 2px; /* Espacio entre elementos */
+}
+
+.textF {
+    font-weight: bold;
+}
+.he_footer{
+    margin-top: 200px;
+}
+
+.datosC {
+    margin-top: 200px;
+    text-align: center;
+   
+    
+} table {
+    width: 80%;
+    margin: 20px auto; /* Centramos la tabla y añadimos un margen superior */
+    border-collapse: collapse; /* Eliminamos los bordes dobles */
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3); /* Sombra alrededor de la tabla */
+    font-family: Arial, sans-serif; /* Cambiamos la fuente */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borde alrededor de cada celda */
+    padding: 12px; /* Mayor padding para una mejor apariencia */
+    text-align: center;
+}
+
+th {
+    background-color: #fbfbfb; /* Color de fondo de los encabezados */
+    color: #000000; /* Color de texto de los encabezados */
+    font-weight: bold; /* Texto en negrita para los encabezados */
+}
+
+tr:nth-child(even) {
+    background-color: #e4f5fe; /* Fondo gris claro para las filas pares */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Efecto hover para las filas */
+}
+
+th, td {
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+th:first-child, td:first-child {
+    border-top-left-radius: 5px; /* Borde superior izquierdo redondeado */
+    border-bottom-left-radius: 5px; /* Borde inferior izquierdo redondeado */
+}
+
+th:last-child, td:last-child {
+    border-top-right-radius: 5px; /* Borde superior derecho redondeado */
+    border-bottom-right-radius: 5px; /* Borde inferior derecho redondeado */
+}
+.impuestos{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(152, 0, 0);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(193, 193, 193);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+
+}
+
+.total a{
+    font-size: 17px;
+    font-weight: 600;
+    
+}
+
+.aviso{
+    width: 80%;
+    border: 1px solid rgb(242, 242, 242);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    margin: auto;
+    margin-top: 25px;
+}
+
+.aviso h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.aviso h4{
+    font-size: 16px;
+}

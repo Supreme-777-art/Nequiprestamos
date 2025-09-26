@@ -1,0 +1,104 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+
+@keyframes latidos {
+    from {
+        transform: none;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    to {
+        transform: none;
+    }
+}
+
+.casilla{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.casilla table{
+	width: 100%;
+}
+
+.casilla td{
+	text-align: center;
+}
+
+*{
+    font-family: Helvetica, Sans-Serif;
+}
+
+
+.separador{
+    width: 100%;
+    height: 5px;
+}
+
+.ficha{
+	background: #3b00404f;
+   
+	border-radius: 10px;	
+	width: 70%;
+	margin:30px auto;
+	padding: 10px;
+	text-align: center;		
+}
+
+.notificacion{
+	border: 1px solid #028613;
+	animation: latidos .5s infinite;
+}
+
+.info{
+	color: #fff;
+}
+
+.acciones{
+	background: #00ff0042;
+    color: #111111;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.btn-apagado{
+    background: #5F5F5F;
+    color: white;
+    border: 0px;
+    border-radius: 2px;
+    padding: 4px 12px;
+    font-size: 15px;
+    width: 100px;
+    cursor: pointer;    
+}
+
+
+.btn{
+    background: #030561;
+    color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 2px;
+    padding: 4px 12px;
+    font-size: 15px;
+    width: 100px;
+    cursor: pointer;    
+}
+.btn:hover{
+    background: #FF4848;
+}
+.btn:active{
+    background: #E10000;
+}
+body{
+	background:#d6d6d6;
+    background-image: url(/panel/img/img.webp);
+    background-size: 30%;
+    background-repeat: no-repeat;
+	padding: 30px;
+}

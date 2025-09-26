@@ -1,0 +1,45 @@
+	body {
+  			background: #101049;
+  			font-family: var(--font-style);
+		}
+		
+		:root {
+			--font-style: "Nunito Sans", sans-serif;}
+
+		.titulo{
+			color: #fff;
+			text-align: center;
+			font-size: 20px;
+		}
+		.login{
+			position: absolute;
+  			top: 50%;
+  			left: 50%;
+  			width: 400px;
+  			padding: 40px;
+  			transform: translate(-50%, -50%);
+  			background: #5f515e9d;
+  			box-shadow: 0 15px 25px rgba(110, 2, 56, 0.7);
+  			border-radius: 10px;
+		}
+		.entradas{
+			position: relative;
+			width: 100%;
+			padding: 10px 0;
+			font-size: 16px;
+			color: #500236;
+			margin-bottom: 10px;
+  			
+			border:1px solid rgb(199, 196, 196);
+            border-radius: 20px;
+            margin-top: 15px;
+			outline: none;
+		}
+		.etiquetas{
+			color: 	#fff;
+			
+		}
+		.mensaje{
+			color: #fff;
+			display: none;
+		}
