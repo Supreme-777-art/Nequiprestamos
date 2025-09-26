@@ -1,14 +1,13 @@
-# Usa una imagen oficial de Apache con PHP
 FROM php:8.2-apache
 
-# Copia todo el contenido del repositorio al directorio raíz de Apache
 COPY . /var/www/html/
 
-# Da permisos adecuados (opcional pero recomendado)
+# Cambia el DocumentRoot del sitio a /var/www/html/panel/admin
+RUN sed -i 's|DocumentRoot /var/www/html|DocumentRoot /var/www/html/panel/admin|g' /etc/apache2/sites-available/000-default.conf
+
+# Da permisos adecuados
 RUN chown -R www-data:www-data /var/www/html
 
-# Expón el puerto 80
 EXPOSE 80
 
-# Opcional: habilita mod_rewrite si usas .htaccess
 RUN a2enmod rewrite
